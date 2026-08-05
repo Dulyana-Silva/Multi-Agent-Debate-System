@@ -1,7 +1,53 @@
 # Multi-Agent Adversarial Fact-Checker
 
 
-LangGraph is an orchestration framework.3
+LangGraph is an orchestration framework.
+
+                 User
+
+                  │
+
+                  ▼
+
+          Claim Parser Agent
+
+                  │
+
+                  ▼
+
+        Task Orchestrator Agent
+
+          │                │
+
+          ▼                ▼
+
+   Defense Agent     Prosecutor Agent
+
+          │                │
+
+          └──────┬─────────┘
+
+                 ▼
+
+        Evidence Aggregator
+
+                 ▼
+
+        Source Ranking Agent
+
+                 ▼
+
+           Judge Agent
+
+                 ▼
+
+     Explanation Generator
+
+                 ▼
+
+       Structured JSON Report
+
+       
 
 #### Defense Agent:
 
